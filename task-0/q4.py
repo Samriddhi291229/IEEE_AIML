@@ -35,3 +35,35 @@ final_scores = np.array([
     50, 35, 35, 35, 67, 53, 49, 53, 45, 41, 38, 35, 53, 52, 38, 59,
     56, 40, 42, 45, 35, 49, 54, 48, 42, 35, 35, 50, 56, 52, 52, 50
 ])
+# 1. Print the shape and data type of each array
+print("Hours Studied Shape:", hours_studied.shape,
+      "| Dtype:", hours_studied.dtype)
+print("Attendance Shape:", attendance.shape, "| Dtype:", attendance.dtype)
+print("Previous Scores Shape:", previous_scores.shape,
+      "| Dtype:", previous_scores.dtype)
+print("Final Scores Shape:", final_scores.shape, "| Dtype:", final_scores.dtype)
+
+# 2. Find the mean final score
+mean_final = np.mean(final_scores)
+print("\nMean Final Score:", mean_final)
+
+# 3. Find the maximum and minimum final score
+max_final = np.max(final_scores)
+min_final = np.min(final_scores)
+print(f"\nMax Final Score: {max_final} | Min Final Score: {min_final}")
+
+# 4. Find the standard deviation of final scores
+std_final = np.std(final_scores)
+print("\nStandard Deviation of Final Scores:", std_final)
+
+# 5. Add 5 bonus marks to every final score using NumPy array operations
+bonus_scores = final_scores + 5
+print("\nFinal Scores after 5 bonus marks:", bonus_scores)
+
+# 6. Create a Boolean array showing which students scored at least 75
+is_high_scorer = final_scores >= 75
+print("\nBoolean array (Score >= 75):\n", is_high_scorer)
+
+# 7. Use Boolean indexing to print only the scores greater than or equal to 75
+high_scores = final_scores[is_high_scorer]
+print("\nScores >= 75:", high_scores)
