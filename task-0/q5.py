@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. Load the CSV into a DataFrame.
-df = pd.read_csv("student_performance.csv")
+df = pd.read_csv("task-0/data/student_performance.csv")
 
 # 2. Print the first five rows.
 print("First 5 Rows:")
@@ -43,5 +43,5 @@ print("\nDataFrame Sorted by Final Score (Descending) ")
 print(df_sorted.head())
 
 # 11. Save the processed DataFrame as processed_student_performance.csv
-df_sorted.to_csv("processed_student_performance.csv", index=False)
+df_sorted.to_csv("task-0/data/processed_student_performance.csv", index=False)
 print("\nProcessed DataFrame successfully saved to 'processed_student_performance.csv'")
