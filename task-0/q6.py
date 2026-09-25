@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load processed dataset from Q5
-df = pd.read_csv("processed_student_performance.csv")
+df = pd.read_csv("data/processed_student_performance.csv")
 
 plt.style.use(
     "seaborn-v0_8-whitegrid" if "seaborn-v0_8-whitegrid" in plt.style.available else "default")
